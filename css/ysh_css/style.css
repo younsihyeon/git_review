@@ -1,0 +1,351 @@
+@charset "utf-8";
+
+/* Remove or comment out existing styles that are affected by Bootstrap
+
+body {
+    padding-top: 50px; /* Add padding to the top to accommodate the fixed navbar if you have one */
+/* }
+
+footer {
+    margin-top: 20px;
+} */
+
+/* Add or customize Bootstrap styles as needed */ */
+
+
+
+*{
+    margin:  0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #222328;
+    
+}
+
+.bg{
+    min-height: 100%; 
+    min-width: 1024px; 
+    width: 100%; 
+    height: auto; 
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+body{
+    width: 100%;
+    font-size: 20px;
+    z-index: 1;
+    
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+header{
+    float: left;
+}
+
+.top{
+    float: left;
+    height: 650px;
+    width: 200px;
+}
+
+@font-face {
+    /* https://noonnu.cc/font_page/1066 */
+    font-family: 'ClimateCrisisKRVF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/ClimateCrisisKRVF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo{
+    float: left;
+    height: 40px;
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    position: relative;
+
+}
+
+.logo b{
+    width: 200px;
+    height: 71px;
+    line-height: 71px;
+    position: absolute;
+    font-family: 'ClimateCrisisKRVF';
+    background-color: yellow;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+
+.menu{
+    width: 180px;
+    top: 100px;
+    text-align: center;
+}
+
+.navi>li{
+    float: left;
+    width: 180px;
+}
+
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.navi>li>a{
+    height: 165px;
+    width: 180px;
+    line-height: 165px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328; 
+    color: #fff;
+    font-family: 'TTWanjudaedunsancheB';
+}
+
+.navi>li>a:hover{
+    background-color: gray;
+    color: #ff0;
+}
+
+.contents{
+    float: right;
+    height: 200px;
+    width: 800px;
+}
+
+.submenu{
+    float: left;
+    width: 100%;
+    display: none; 
+}
+
+.submenu>li>a{
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ccc;
+    color: #fff;
+}
+
+.submenu>li>a:hover{
+    background-color: #999;
+    color: #ff0;
+}
+
+.notice{
+    position: relative;
+    float: left;
+    height: 190px;
+    width: 280px;
+    margin: 10px;
+}
+
+.contents>ul{
+    width: 90%;
+    height: 600px;
+    border: 3px solid black;    
+}
+
+
+.tab{
+    float: left; 
+    width: 300px;
+}
+
+.tab h4{
+    float: left; 
+    padding-top: 20px;
+    margin-top: 90px;
+    height: 50px; 
+    width: 300px; 
+    line-height: 30px; 
+    text-align: center; 
+    font-size: 30px;
+    font-weight: bold; 
+    color: #fff; 
+    background-color: #000;
+    font-family: 'TTWanjudaedunsancheB';
+}
+
+@font-face{
+    /* https://noonnu.cc/font_page/1233 */
+    font-family:'DNFBitBitv2';
+    font-style:normal;font-weight:400;src:url('//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf')format('opentype')
+}
+
+.substance h1{
+    font-family:'DNFBitBitv2';
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+@font-face {
+    /* https://noonnu.cc/font_page/1282 */
+    font-family: 'GapyeongWave';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/GapyeongWave.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.shm{
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    background: yellowgreen;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'GapyeongWave';
+}
+
+.shm:hover{
+    opacity: 0.5;
+}
+
+#modal{
+    width: 100%; 
+    height: 100%; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    background: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+    display: none;
+}
+
+#modal.active{
+    display: block;
+}
+
+.modal_up{
+    width: 500px; 
+    height: 400px; 
+    position: fixed; 
+    left: 45%; 
+    top:32%; 
+    background-color: #fff;
+    overflow: scroll;
+}
+
+.uptitle{
+    margin-top: 30px; 
+    text-align: center; 
+    line-height: 16px; 
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.upbody{
+    padding: 30px; 
+    text-align: center; 
+    font-size: 16px; 
+    line-height: 30px;
+}
+
+.btn{
+    top: 1020px;
+    height: 35px; 
+    width: 100px; 
+    cursor: pointer; 
+    display: block; 
+    text-align: center; 
+    line-height: 35px;
+    font-size: 16px; 
+    font-weight: bold; 
+    background: #fabd43; 
+    border-radius: 3px; 
+    position: absolute; 
+    right: 10px;
+}
+
+.btn:hover{
+    opacity: 0.5;
+}
+
+.substance img{
+    width: 300px;
+    height: 300px;
+}
+
+footer{
+    margin-top: 50%;
+    float: left;
+    
+}
+
+.bottom{
+    float: left;
+    height: 100px;
+    width: 100%;
+    background-color:#ababab;
+}
+.copy{
+    float: left;
+    height: 100px;
+    width: 600px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+}
+
+.site{
+    float: right;
+    height: 100px;
+    width: 200px;
+}
+
+.sns{
+    float: right;
+    height: 50px;
+    width: 200px;
+}
+
+.sns ul{
+    text-align: center;
+}
+
+.sns ul li{
+    display: inline-block;
+}
+
+.sns img{
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+}
+
+.sns img:hover{
+    opacity: 0.5;
+}
+
+.familysite{
+    float: right;
+    height: 50px;
+    width: 200px;
+}
+
+.familysite select{
+    float: right;
+    height: 30px;
+    width: 180px;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
